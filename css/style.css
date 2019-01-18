@@ -1,0 +1,158 @@
+
+/*** PAGE STRUCTURE / SIZES / GENERAL GLOBAL SET UP ***/
+
+* {
+    font-family: 'Gochi Hand', sans-serif;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    background-image: url("../img/blackboard.png");
+    background-size: 100%;
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-image: url("../img/brick-wall.jpg");
+    background-size: 125%;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.left-side {
+    width: 30%;
+}
+
+.title-container {
+    height: 100px;
+    margin: 75px 0 0 75px;
+}
+
+.game-functions {
+    height: 500px;
+    margin: 0 0 0 75px;
+}
+
+.right-side {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 5px;
+    transition: all 0.4s linear;
+}
+
+.game-board, .start-btn, .restart-btn, input {
+    cursor: pointer;
+}
+
+.game-board
+{
+	width: 400px;
+	height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+    background-image: url("../img/board-game.png");
+    background-size: 100%;
+    
+	display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+.scores-container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.winner-container {
+    width: 250px;
+    margin: 0 0 100px 0;
+}
+
+.player-1-container, .player-2-container {
+    flex-direction: row;
+    margin: 100px 50px 0 50px;
+}
+
+.game-container {
+    display: flex;
+}
+
+
+/*** GAME BOARD STYLE ***/
+
+.clicked-player-1 {
+    background-image: url("../img/board-game-elements-cross.png");
+}
+
+.clicked-player-2 {
+    background-image: url("../img/board-game-elements-circle.png");
+}
+
+
+
+/*** FONT SIZE / TEXT ELEMENT and some margin, letter-spacing... ***/ 
+
+h1 {
+    font-size: 55px;
+    letter-spacing: 4px;
+}
+
+.game-description {
+    font-size: 13px;
+}
+
+.game-rules {
+    font-size: 15px;
+}
+
+.game-description, .game-rules {
+    letter-spacing: 2px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.enter-name, .restart-btn, .start-btn, .winner-message, .player-win-name {
+    letter-spacing: 6px;
+}
+
+.restart-btn, .start-btn {
+    font-size: 20px;
+}
+
+.enter-name {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.start-btn, .restart-btn {
+    margin-top: 25px;
+    }
+
+.player-1-container, .player-2-container {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.player-win-name {
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.winner-msg {
+    font-size: 30px;
+    margin-top: 5px;
+}
