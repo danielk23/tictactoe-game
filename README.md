@@ -1,11 +1,11 @@
 # Tic Tac Toe
 
-[Play](https://danielk78.github.io/tictactoe-game/)
+[Play](https://danielk23.github.io/tictactoe-game/)
 
 
 ### Description
 
-Desktop online version of the "paper" tic tac toe game.
+My first ever web app. Currently a desktop version of the "paper" tic tac toe game. 
 
 * 2 player game
 * 3x3 board 
